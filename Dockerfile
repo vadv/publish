@@ -1,7 +1,7 @@
 FROM ruby:2-alpine
 
-RUN apk --no-cache add build-base rpm tar zip
+RUN apk --no-cache add build-base rpm tar zip bash
 RUN gem install package_cloud
 RUN gem install --no-document fpm -v 1.11.0
-ENTRYPOINT []
+ENTRYPOINT ["/bin/bash"]
 CMD []
