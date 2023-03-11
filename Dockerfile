@@ -1,4 +1,4 @@
-FROM ruby:2
+FROM ruby:2-alpine
 
 RUN apk --no-cache add build-base rpm tar zip
 RUN gem install package_cloud
