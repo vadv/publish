@@ -5,7 +5,6 @@ inputs:
   command:
     description: 'command to execute'
     required: true
-outputs:
 runs:
   using: 'docker'
   image: 'Dockerfile'
