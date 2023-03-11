@@ -1,0 +1,13 @@
+# action.yml
+name: 'Publish'
+description: 'Build and publish packages (fpm && packagecloud).'
+inputs:
+  command:
+    description: 'command to execute'
+    required: true
+outputs:
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.command }}
